@@ -1,0 +1,55 @@
+[INFO] Stopwords loaded: 179
+[INFO] Total samples: 2225
+
+[DATASET DISTRIBUTION]
+tech           : 401
+business       : 510
+sport          : 511
+entertainment  : 386
+politics       : 417
+
+[VOCAB INFO]
+Actual vocabulary size: 29699
+Average text length: 228.99
+
+[LABEL MAPPING]
+sport           -> 0
+business        -> 1
+politics        -> 2
+tech            -> 3
+entertainment   -> 4
+
+[DATA SPLIT]
+Train samples: 1780
+Validation samples: 445
+
+[MODEL SUMMARY]
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ embedding (Embedding)                │ ?                           │     0 (unbuilt) │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ conv1d (Conv1D)                      │ ?                           │     0 (unbuilt) │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ global_max_pooling1d                 │ ?                           │               0 │
+│ (GlobalMaxPooling1D)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ ?                           │     0 (unbuilt) │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ ?                           │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ ?                           │     0 (unbuilt) │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 0 (0.00 B)
+ Trainable params: 0 (0.00 B)
+ Non-trainable params: 0 (0.00 B)
+
+
+[TRAINING START]
+[TRAINING END] Time used: 15.79s
+
+[SAMPLE PREDICTION]
+Text snippet: howard hits back mongrel jibe michael howard said claim peter hain tory leader acting like  attack mongrel  shows labour...
+Predicted label: politics
+Confidence: 1.0000
