@@ -1,4 +1,4 @@
-# 📰 NewsFlash-CNN: 基于一维卷积神经网络的 BBC 新闻自动分类系统
+# 📰 NewsFlash-CNN: 基于卷积神经网络（CNN）的BBC新闻文本自动分类系统
 
 <div align="center">
   
